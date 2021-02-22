@@ -3,7 +3,9 @@ function p(e, t){
     return "<" + e + ">" + t + "</" + e + ">";
 }
   
-function fillUp(dataTitle) {
+function fillUp() {
+    dataTitle = event.srcElement.innerHTML;
+    console.log(dataTitle);
     var htmData = ""
 
     htmData += p( "h1", dataTitle );
@@ -14,5 +16,6 @@ function fillUp(dataTitle) {
         htmData += p("i", key.toLowerCase() + ": ");
         htmData += value[Math.floor(Math.random() * value.length)];
     }
+    
     document.getElementById("fillUp").innerHTML = htmData;
 }
