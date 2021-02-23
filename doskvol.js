@@ -6,12 +6,13 @@ function colpo(e) {
     Segreti interessanti, un collegamento a un’opportunità alternativa. È molto probabile che i Guardiani mettano in sicurezza l’essenza catturata con protezioni arcane. I Riconciliati aborrono lo scambio di essenza e potrebbero essere un potenziale alleato o nemico, a seconda di quello farete.\n`],
     */
     d = rawDataHit["Il Colpo"];
-    rawData["Colpo"] = {
+    console.log(rawDataHit["Il Colpo"])
+    rawData[e.target.innerText] = {
         "Un Cliente/Bersaglio": randomList(d["Cliente/Bersaglio"])
         ,"Associato con": randomList(d["E FAZIONI"])
         ,"Dove/luogo": randomList(rawData["Luogo"]["Luogo"])
         ,"Lavoro": randomList(d["lavoro"])
-        ,"Opportunità": randomList(d["Opportunità"])
+        ,"Opportunità": randomList(rawDataHit["Bande"][e.target.innerText.toLowerCase()])
         ,"Modifica o complicazione": randomList(d["modifica o complicazione"])
         ,"Legato a una persona": randomList(d["LEGATO A UNA PERSONA"])
         ,"Associata con": randomList(d["E FAZIONI"])
@@ -59,6 +60,10 @@ function fillUp(e) {
     setData(d, rawData[dataTitle])
 }
 
+function getBande() {
+    return Object.keys(rawDataHit["Bande"]);
+}
+
 function getButtonsList(){
     return rawData;
 }
@@ -80,11 +85,26 @@ function designUI(){
         li.appendChild(createButton(key, fillUp));
         ul.appendChild(li);
     }
+
+    var ul = document.createElement('ul');
+    document.body.appendChild(ul);
     var li = document.createElement('li');
     li.style.display = "inline";
-    li.appendChild(createButton("Colpo", colpo) );
+    li.innerText = "Il Colpo: ";
     ul.appendChild(li);
+
+    for (const [key, value] of Object.entries(getBande())) {
+        var li = document.createElement('li');
+        li.style.display = "inline";
+        li.appendChild(createButton(capitalizeFirstLetter(value), colpo) );
+        ul.appendChild(li);
+    }
 }
+
+function capitalizeFirstLetter(string) {
+    string = string.toLowerCase();
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 
 function setTitle(d, dataTitle){
     var t = document.createElement('h1');
