@@ -40,7 +40,6 @@ body {
 .menu ul li button {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
-  min-height: 10mm;
   border-width: 3px;
   font-size: 1.2rem;
   background-color: gray;
@@ -53,4 +52,23 @@ body {
 
 #generated h3 {
   font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu ul li button {
+    font-size: 2rem;
+    background-color: red;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu ul li button {
+    font-size: 3rem;
+    background-color: blue;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu ul li button {
+    font-size: 4rem;
+    background-color: green;
+  }
 }
