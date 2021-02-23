@@ -42,9 +42,9 @@ body {
   margin-bottom: 0.5em;
   min-height: 10mm;
   border-width: 3px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: gray;
-  color: orange;
+  color: whitesmoke;
 }
 
 #generated h2 {
