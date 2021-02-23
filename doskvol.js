@@ -90,17 +90,15 @@ function designUI(){
         li.appendChild(createButton(key, fillUp));
         ul.appendChild(li);
     }
-
+    var t = document.createElement('h2');
+    t.innerText = "Il Colpo: ";
+    d.appendChild(t);
+    
     var ul = document.createElement('ul');
     d.appendChild(ul);
-    var li = document.createElement('li');
-    li.style.display = "inline";
-    li.innerText = "Il Colpo: ";
-    ul.appendChild(li);
 
     for (const [key, value] of Object.entries(getBande())) {
         var li = document.createElement('li');
-        li.style.display = "inline";
         li.appendChild(createButton(capitalizeFirstLetter(value), colpo) );
         ul.appendChild(li);
     }
@@ -112,7 +110,7 @@ function capitalizeFirstLetter(string) {
   }
 
 function setTitle(d, dataTitle){
-    var t = document.createElement('h2');
+    var t = document.createElement('h3');
     t.innerText = dataTitle;
     d.appendChild(t);
 }
