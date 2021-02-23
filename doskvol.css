@@ -54,7 +54,7 @@ body {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (device-width: 360px) {
   .menu ul li button {
     font-size: 2rem;
     background-color: red;
