@@ -102,6 +102,17 @@ function designUI(){
         li.appendChild(createButton(capitalizeFirstLetter(value), colpo) );
         ul.appendChild(li);
     }
+    addPulisci();
+}
+
+function  addPulisci() {
+    document.getElementById("title").innerHTML += " &nbsp; &nbsp; "
+    var b = createButton("Pulisci", cleanAll);
+    document.getElementById("title").appendChild(b);  
+}
+
+function cleanAll() {
+    document.getElementById("generated").innerHTML = ""
 }
 
 function capitalizeFirstLetter(string) {
