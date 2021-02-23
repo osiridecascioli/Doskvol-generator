@@ -74,24 +74,25 @@ function getButtonsList(){
 
 function createButton(key, listenFunction){
     var b = document.createElement('button');
-    b.style.marginRight = "5px";
     b.innerText = key;
     b.addEventListener('click', listenFunction, false);
     return b;
 }
 
 function designUI(){
+    var d = document.createElement('div');
+    d.className = "menu";
+    document.getElementById("main").appendChild(d);
     var ul = document.createElement('ul');
-    document.body.appendChild(ul);
+    d.appendChild(ul);
     for (const [key, value] of Object.entries(getButtonsList())) {
         var li = document.createElement('li');
-        li.style.display = "inline";
         li.appendChild(createButton(key, fillUp));
         ul.appendChild(li);
     }
 
     var ul = document.createElement('ul');
-    document.body.appendChild(ul);
+    d.appendChild(ul);
     var li = document.createElement('li');
     li.style.display = "inline";
     li.innerText = "Il Colpo: ";
@@ -121,7 +122,7 @@ function setFather(d){
     if (!dP){
         dP = document.createElement('div');
         dP.id = "generated";
-        document.body.appendChild(dP);
+        document.getElementById("main").appendChild(dP);
     }
     d.innerHTML = "";
     dP.insertBefore(d, dP.childNodes[0]);

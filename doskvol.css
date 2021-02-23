@@ -1,0 +1,44 @@
+body {
+  font-family: "Zilla Slab", HelveticaNeue, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #2b2c31, #4c4d52 20%) no-repeat fixed;
+  color: #2b2c31;
+  font-size: 1.125rem;
+  line-height: 1.3em;
+}
+
+#main {
+  background-color: #e5e5e5;
+}
+
+#main .h1 {
+  background-color: #0d0e13;
+  color: #fff;
+  margin-bottom: 0.5em;
+  padding: 0.8em 0.6em 0.8em;
+}
+
+#main .h1 h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.menu,
+#generated {
+  padding: 0 0.4em 0.8em;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li button {
+  min-height: 36dp;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  min-height: 10mm;
+  border-width: 3px;
+}
