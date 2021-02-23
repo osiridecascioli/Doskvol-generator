@@ -6,7 +6,6 @@ function colpo(e) {
     Segreti interessanti, un collegamento a un’opportunità alternativa. È molto probabile che i Guardiani mettano in sicurezza l’essenza catturata con protezioni arcane. I Riconciliati aborrono lo scambio di essenza e potrebbero essere un potenziale alleato o nemico, a seconda di quello farete.\n`],
     */
     d = rawDataHit["Il Colpo"];
-    console.log(rawDataHit["Il Colpo"])
     rawData[e.target.innerText] = {
         "Un Cliente/Bersaglio": randomList(d["Cliente/Bersaglio"])
         ,"Associato con": randomList(d["E FAZIONI"])
@@ -21,6 +20,11 @@ function colpo(e) {
 }
 
 function randomList(myList) {
+    if (!myList){
+        console.error("Err: no list!");
+        console.log(myList);
+        return "";
+    }
     if (typeof(myList) == "string"){
         myList = [myList];
     }

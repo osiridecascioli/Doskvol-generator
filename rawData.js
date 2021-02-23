@@ -1863,27 +1863,9 @@ const rawDataHit = {
             Informazioni più precise:\n
             Fazioni collegate e cosa vogliono o necessitano. Quell’essenza era stata pagata dall’Alveare. Vogliono ciò che è loro.\n
             Un vettore non così scontato per il piano. Le essenze di spirito possono essere richiamate attraverso il campo spettrale... in teoria.\n
-            Segreti interessanti, un collegamento a un’opportunità alternativa. È molto probabile che i Guardiani mettano in sicurezza l’essenza catturata con protezioni arcane. I Riconciliati aborrono lo scambio di essenza e potrebbero essere un potenziale alleato o nemico, a seconda di quello farete.\n`],
-        "Opportunità":[
-            "I vostri clienti più prestigiosi sono stanchi di venire nel vostro territorio per una dose. Create una vetrina in una parte più onesta della città (o al contrario per i clienti di classe sociale inferiore)."
-            ,"Il culto di un dio dimenticato vi fa un'offerta per una collaborazione: possono rendere il vostro prodotto più appetibile in cambio di... un trattamento speciale."
-            ,"Una nobile dilettante sempre sulla cresta dell'onda sta bazzicando nella vostra area con il suo entourage di leccapiedi, in cerca della 'prossima hit' da provare."
-            ,"Un ardente predicatore fa proclami contro il vostro prodotto per le strade, abbassando la richiesta. Ma vi sembra di riconoscerlo come un vostro cliente..."
-            ,"La gang che operava sul vostro territorio anni fa è tornata dalle Isole del Pugnale e si aspetta di tornare ai suoi affari come se nulla fosse."
-            ,"Inizia ad apparire nelle strade un'imitazione del vostro prodotto, a un prezzo ribassato. Il vostro fornitore vi sta tagliando fuori'"
-            ,"I trafficanti vogliono eliminare tutti gli intermediari nella filiera e gestire le cose direttamente con voi."
-            ,"I fantasmi dei vostri 'ex' clienti sono improvvisamente richiamati a voi, smaniosi per la loro dose."
-            ,"Una famigerata cacciatrice di leviatani ha gusti che... solitamente non soddisfate, ma è disposta a pagare davvero molto bene."
-            ,"Una Giubba Blu ha ucciso il suo ultimo spacciatore per aver 'spinto troppo in là il loro rapporto', e si rivolge alla banda come fonte alternativa."
-            ,"Una brutale gang di feroci assassini ha 'ripulito' il covo del vizio di un rivale. Ora vogliono che siate voi a occuparvi della gestione."
-            ,"Una figura mascherata vi paga profumatamente per l'opportunità di uccidere uno dei vostri clienti abituali mentre è... distratto."
-            ,"Un assassino arcano sta bersagliando fruitori e spacciatori, lasciando Simulacri a vagare per la città."
-            ,"Un operatore solitario sta distribuendo una versione molto più popolare del vostro prodotto."
-            ,"Un membro del Consiglio Cittadino sta mettendo al vaglio un divieto assoluto per un prodotto illecito; potrebbero farsi convincere a fare in modo che sia il vostro, mandando la domanda alle stelle."
-            ,"Una nuova gang del vizio sta facendo delle mosse molto scaltre e intelligenti. Le voci dicono che siano guidati dal fantasma di un criminale leggendario."
-            ,"Gli studenti dell'Accademia di Doskvol hanno dimostrato interesse per la vostra merce, ma dovete consegnarla direttamente, superando la sicurezza gestita dalle Giubbe Blu."
-            ,"Un leggendario truffatore e la sua banda stanno colpendo diversi magazzini. È stata messa una taglia sulle loro teste: riuscirete a rivendicarla'"
+            Segreti interessanti, un collegamento a un’opportunità alternativa. È molto probabile che i Guardiani mettano in sicurezza l’essenza catturata con protezioni arcane. I Riconciliati aborrono lo scambio di essenza e potrebbero essere un potenziale alleato o nemico, a seconda di quello farete.\n`
         ],
+
         "Cliente/Bersaglio":[
             "Nobile"
             ,"Ufficiale"
@@ -1999,7 +1981,7 @@ const rawDataHit = {
 
         ],
         "LEGATO A UNA PERSONA":[
-            ,"Strano Fantasma, Demone, Dio"
+            "Strano Fantasma, Demone, Dio"
 ,"PG Amico"
 ,"PG Rivale"
 ,"PG Fornitore del Vizio"
