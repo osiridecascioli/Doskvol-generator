@@ -31,7 +31,7 @@ function setData(d, data){
         var p = document.createElement('p');
         p.innerText = key.toLowerCase() + ": ";
         var v = randomList(value);
-        p.innerText += v;
+        p.innerHTML += v;
         d.appendChild(p);
     }
 }
