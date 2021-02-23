@@ -112,7 +112,7 @@ function capitalizeFirstLetter(string) {
   }
 
 function setTitle(d, dataTitle){
-    var t = document.createElement('h1');
+    var t = document.createElement('h2');
     t.innerText = dataTitle;
     d.appendChild(t);
 }
