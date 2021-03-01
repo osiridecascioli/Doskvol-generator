@@ -1804,7 +1804,82 @@ const rawData = {
 ,"Dissacrazione: caos cieco e insensato; raccogliere i frutti dell'anarchia."
     ]
 }
-
+, "Tempo atmosferico":
+    {
+        "Tempo1":[
+"pioviggine"
+,"pioggia"
+,"pioggia"
+,"pioggia"
+,"pioggia battente"
+,"pioviggine"
+,"pioggia"
+,"pioggia battente"
+,"rovescio"
+,"nubifragio"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"ESTREMO"
+        ]
+        ,"Tempo2":[
+"pioviggine"
+,"pioggia"
+,"pioggia battente"
+,"pioviggine"
+,"pioggia"
+,"pioggia"
+,"pioggia"
+,"pioggia battente"
+,"rovescio"
+,"nubifragio"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"nuvoloso"
+,"ventoso"
+,"nebbioso"
+,"'sereno'"
+,"ESTREMO"
+        ]
+        , "Estremi":[
+"neve"
+,"ghiaccio"
+,"tempesta di fulmini"
+,"grandine"
+,"incredibilmente afoso"
+,"incredibilmente caldo secco"
+,"tempesta di neve"
+,"lunA gemelleE"
+,"secca???"
+,"senza luna"
+, "la barriera visibile"
+        ]
+        , "Conseguenze":[
+"I canali esondano (sgorghi? acqua alta?)"
+,"si fermano le attività"
+,"la barriera si rompe"
+,"incendio"
+,"fulmini orizzontali"
+,"allagamenti"
+,"il tetto perde acqua"
+,"qualcosa riemerge nel fiume"
+        ]
+    }
 }
 
 const rawDataHit = {
