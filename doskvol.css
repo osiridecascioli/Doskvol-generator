@@ -54,6 +54,19 @@ body {
   font-size: 1.25rem;
 }
 
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 3px;
+  padding: 1px;
+  background-color: black;
+  color: #fff;
+}
+#footer a {
+  color: red;
+}
+
 @media only screen and (device-width: 360px) {
   .menu ul li button {
     font-size: 2rem;
