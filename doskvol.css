@@ -46,6 +46,10 @@ body {
   color: whitesmoke;
 }
 
+.menu ul li button.close {
+  margin-left: -0.5em;
+}
+
 #generated h2 {
   font-size: 1.5rem;
 }

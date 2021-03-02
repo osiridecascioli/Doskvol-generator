@@ -716,7 +716,7 @@ const rawData = {
 ,"Strumenti Medici"]
 }
 ,"Luogo":{
-    "Luogo":[
+    "Luoghi":[
     "Draga di Dunslough"
     ,"Ferriera (case popolari) di Coalridge"
     ,"Ponte Bowmore a Brightstone"

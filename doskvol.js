@@ -33,6 +33,7 @@ function randomList(myList) {
 
 function setData(d, data){
     for (const [key, value] of Object.entries(data)) {
+        console.log(key);
         var p = document.createElement('p');
         p.innerText = key.toLowerCase() + ": ";
         var v = randomList(value);
@@ -41,27 +42,74 @@ function setData(d, data){
     }
 }
 
-function fillUp(e) {
-    var dataTitle = e.target.innerHTML;
-    if( dataTitle == "" ){
-        console.error('ERR: no Title!');
+function getListener(e) {
+    if( !e || !e.target || e.target.innerText == "" ){
+        throw new Error('ERR: no Title!');
+    }
+    return e.target.innerText;
+}
+
+function moreButton(e) {
+    var dataTitle =  e.target.id.substring(9,  e.target.id.length);
+    var f = document.getElementById( "li_" + dataTitle );
+    var d = getElement( "son_" + dataTitle )
+    f.appendChild(d);
+    for (const [key, value] of Object.entries(rawData[dataTitle])) {
+        if (document.getElementById( key )){
+            continue;
+        }
+        var b = createButton(key, fillMore);
+        d.appendChild(b);
+    }
+    return;
+}
+
+function fillMore(e){
+    var dataTitle = getListener(e);
+    for (const [key, value] of Object.entries(rawData)) {
+        if (!rawData[key][dataTitle]){
+            continue;
+        }
+
+        var d = getElement(dataTitle);
+    
+        setFather(d);
+    
+        setTitle(d, dataTitle);
+        
+        setData(d, {"":rawData[key][dataTitle]});
         return;
     }
+}
+
+function clearButton(e) {
+    var dataTitle = e.target.id;
+    dataTitle = dataTitle.substring(9, dataTitle.length);
+    document.getElementById( "son_" + dataTitle ).remove();
+}
+
+function fillUp(e) {
+    var dataTitle = getListener(e);
     //console.log(dataTitle);
     if( ! rawData[dataTitle] ){
-        console.error('ERR: no Data!');
+        console.error('ERR: no dataTitle!');
         console.log(dataTitle);
         console.log(rawData);
         return;
     }
-    
+
+    fillUpExtra(dataTitle, rawData[dataTitle]);
+}
+
+function fillUpExtra(dataTitle, myData) {
+        
     var d = getElement(dataTitle);
     
     setFather(d);
 
     setTitle(d, dataTitle);
     
-    setData(d, rawData[dataTitle])
+    setData(d, myData);
 }
 
 function getBande() {
@@ -74,10 +122,31 @@ function getButtonsList(){
 
 function createButton(key, listenFunction){
     var b = document.createElement('button');
+    b.id = "button_" + key;
     b.innerText = key;
     b.addEventListener('click', listenFunction, false);
     return b;
 }
+
+function createClearButton(key) {
+    var b = document.createElement('button');
+    b.id = "button_X_" + key;
+    b.innerText = "X";
+    b.className = "close";
+    b.addEventListener('click', clearButton, false);
+    return b;
+}
+function createExtraButton(key) {
+    var b = document.createElement('button');
+    b.id = "button_E_" + key;
+    b.innerText = "E";
+    b.className = "close";
+    b.addEventListener('click', moreButton, false);
+    return b;
+}
+
+//<p ontouchstart="mouseDown()" ontouchend="mouseUp()" onmousedown="mouseDown()" onmouseup="mouseUp()">Long Touch Me!</p>
+
 
 function designUI(){
     var d = document.createElement('div');
@@ -87,7 +156,10 @@ function designUI(){
     d.appendChild(ul);
     for (const [key, value] of Object.entries(getButtonsList())) {
         var li = document.createElement('li');
+        li.id = "li_" + key;
         li.appendChild(createButton(key, fillUp));
+        li.appendChild(createExtraButton(key));
+        li.appendChild(createClearButton(key));
         ul.appendChild(li);
     }
     var t = document.createElement('h2');
@@ -112,7 +184,9 @@ function  addPulisci() {
 }
 
 function cleanAll() {
-    document.getElementById("generated").innerHTML = ""
+    if (document.getElementById("generated")){
+        document.getElementById("generated").innerHTML = ""
+    }
 }
 
 function capitalizeFirstLetter(string) {
