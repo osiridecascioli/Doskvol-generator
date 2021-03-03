@@ -5,16 +5,16 @@ function colpo(e) {
     Un vettore non così scontato per il piano. Le essenze di spirito possono essere richiamate attraverso il campo spettrale... in teoria.\n
     Segreti interessanti, un collegamento a un’opportunità alternativa. È molto probabile che i Guardiani mettano in sicurezza l’essenza catturata con protezioni arcane. I Riconciliati aborrono lo scambio di essenza e potrebbero essere un potenziale alleato o nemico, a seconda di quello farete.\n`],
     */
-    d = rawDataHit["Il Colpo"];
+    d = rawDataHit["Il colpo"];
     rawData[e.target.innerText] = {
-        "Un Cliente/Bersaglio": randomList(d["Cliente/Bersaglio"])
-        ,"Associato con": randomList(d["E FAZIONI"])
-        ,"Dove/luogo": randomList(rawData["Luogo"]["Luogo"])
-        ,"Lavoro": randomList(d["lavoro"])
-        ,"Opportunità": randomList(rawDataHit["Bande"][e.target.innerText.toLowerCase()])
-        ,"Modifica o complicazione": randomList(d["modifica o complicazione"])
-        ,"Legato a una persona": randomList(d["LEGATO A UNA PERSONA"])
-        ,"Associata con": randomList(d["E FAZIONI"])
+        "Un Cliente/Bersaglio": randomList(d["Cliente/bersaglio"])
+        ,"Associato con": randomList(d["E fazioni"])
+        ,"Dove/luogo": randomList(rawData["Luogo"]["Luoghi"])
+        ,"Lavoro": randomList(d["Lavoro"])
+        ,"Opportunità": randomList(rawDataHit["Bande"][e.target.innerText])
+        ,"Modifica o complicazione": randomList(d["Modifica o complicazione"])
+        ,"Legato a una persona": randomList(d["Legato a una persona"])
+        ,"Associata con": randomList(d["E fazioni"])
     }
     fillUp(e);
 }
@@ -33,7 +33,6 @@ function randomList(myList) {
 
 function setData(d, data){
     for (const [key, value] of Object.entries(data)) {
-        console.log(key);
         var p = document.createElement('p');
         p.innerText = key.toLowerCase() + ": ";
         var v = randomList(value);
