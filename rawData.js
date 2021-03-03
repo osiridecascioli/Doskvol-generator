@@ -1582,7 +1582,7 @@ const rawData = {
 ,"Caccia, tiro a segno"
 ,"Essenze, alchimia"
 ,"Quadri, dipinti, sculture"
-,"Chiesa dell'estasi"
+,"Chiesa dell'Estasi"
 ,"Spettrologia, elettroplasma"
 ,"Buon cibo, ristoranti"
 ,"Gioco d'azzardo, carte, dadi"
@@ -1645,7 +1645,7 @@ const rawData = {
 ,"Voci e altro":{
 "Sentito a Duskwall":[
 "Lyssa l'ha fatto con le sue mani, dicono. Occhio per occhio, a sangue freddo.<br />se davvero ha ucciso il suo capo, non è che un'infame? (sputa)... Ma non una che incrocerà presto."
-,"Ho sentito che il nuovo ispettore era un comandante della cavalleria imperiale...?<br />suppongo che stanare delinquenti a dusk siameglio che cacciare diavoli nelle terre morte, eh?"
+,"Ho sentito che il nuovo ispettore era un comandante della cavalleria imperiale...?<br />suppongo che stanare delinquenti a dusk sia meglio che cacciare diavoli nelle terre morte, eh?"
 ,"Lo chiamo sangue rosso. Prendi veleno di rosposcarlatto, distillalo puro? un metodo sussuratomi da un demone, ahah! taglialo con una fiala diessenza di spirito frazionata, le memorie più belle di una vita passata; un macello da ottenere, ma con solo una goccia...<br />sì, sì come dicevo, lord scurlock ha...<br />lo sballo migliore per l'argento migliore, signoree signori."
 ,"Vedi, ci sono due tipi di persone a questo mondo io e il resto degli idioti."
 ,"Gli hai dato un pugno che l'ha fatto uscire dalle braghe!<br />erano già larghe, penso. Ha perso anche gli stivali. E poi sua moglie incinta mi si è lanciata contro. Cosa dovevo fare?"
@@ -1660,17 +1660,17 @@ const rawData = {
 ]
 ,"Voci per le vie":[
 "Qualcuno sta provando a creare un sindacato per i portuali."
-,"Il sentiero degli echi compra bottigliespettrali inabitate, nessuna domanda."
-,"Un conestabile accetta mazzette perincastrare qualcuno per un crimine."
-,"Le prostitute e le case di piacere sono stateinfiltrate dagli spettri."
-,"La nuova droga, esca, viene fatta con il sanguedi Leviatano e trasforma le persone in demoni."
-,"Tutti i ricchi comprano i lucchetti di turner,si dice siano impossibili da scassinare."
-,"Il ministero della conservazione sta prendendo ilcontrollo dei gondolieri."
-,"Una nave da caccia di Leviatani è tornata senzasuperstiti e con un demone a bordo."
-,"Un magistrato corrotto sta cercando vie d'uscitasegrete da Duskwall, per sfuggire alle accuse."
-,"La chiesa dell'estasi della carne sta cercando unnuovo apice."
-,"I guardiani di spiriti stanno facendo scorta dielettroplasma, in previsione di una carenza."
-,"I caveau della banca di Charterhall sono statisvuotati, ma stanno insabbiando tutto."
+,"Il sentiero degli echi compra bottiglie spettrali inabitate, nessuna domanda."
+,"Un conestabile accetta mazzette per incastrare qualcuno per un crimine."
+,"Le prostitute e le case di piacere sono state infiltrate dagli spettri."
+,"La nuova droga, esca, viene fatta con il sangue di Leviatano e trasforma le persone in demoni."
+,"Tutti i ricchi comprano i lucchetti di Turner, si dice siano impossibili da scassinare."
+,"Il Ministero della Conservazione sta prendendo il controllo dei gondolieri."
+,"Una nave da caccia di Leviatani è tornata senza superstiti e con un demone a bordo."
+,"Un magistrato corrotto sta cercando vie d'uscita segrete da Duskwall, per sfuggire alle accuse."
+,"La Chiesa dell'Estasi della Carne sta cercando un nuovo apice."
+,"I guardiani di spiriti stanno facendo scorta di elettroplasma, in previsione di una carenza."
+,"I caveau della banca di Charterhall sono stati svuotati, ma stanno insabbiando tutto."
 ]
 ,"Eventi della città nei giornali":[
 "Epidemia"
@@ -2009,7 +2009,7 @@ const rawDataHit = {
 }
 ,"Il colpo": {
 "Riassunto":
-[`un bersaglio. Ministero della conservazione.\n
+[`un bersaglio. Ministero della Conservazione.\n
 un luogo. Uno dei magazzini per lo stoccaggio del contrabbando vicino alla stazione gaddoc.\n
 una situazione. Una rete di contrabbando di essenza di spirito, proprio ieri, è stata beccata dai guardiani presso la stazione di gaddoc.\n
 un vettore ovvio per il piano. Laroze può farsi assumere in nero come guardia privata. Vi farà entrare dal retro, per una fetta dei guadagni.\n
@@ -2079,7 +2079,7 @@ segreti interessanti, un collegamento a un’opportunità alternativa. è molto 
 ,"Rapina"
 ,"Rapina a mano armata"
 ,"Terrorizza"
-,"Estorici"
+,"Estorci"
 ,"Incursione"
 ,"Difesa"
 ,"Estrai essenza"
@@ -2145,7 +2145,7 @@ segreti interessanti, un collegamento a un’opportunità alternativa. è molto 
 ,"Marinai o portuali"
 ,"Cacciatori di Leviatani"
 ,"Lord scurlock"
-,"Ministero della conservazione"
+,"Ministero della Conservazione"
 ,"Il consiglio o lafondazione"
 ,"Rifugiati skovlanesi"
 ,"Gli dei dimenticati"
@@ -2158,7 +2158,7 @@ segreti interessanti, un collegamento a un’opportunità alternativa. è molto 
 ,"Le fioche sorelle"
 ,"Sentiero o riconciliati"
 ,"Messi o gazzettini"
-,"La chiesa dell'estasi"
+,"La Chiesa dell'Estasi"
 ,"Predoni delle terre morte"
 ,"Giubbe blu o ispettori"
 ,"Guardiani dispiriti"
