@@ -1,0 +1,93 @@
+body {
+  font-family: "Zilla Slab", HelveticaNeue, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #2b2c31, #4c4d52 20%) no-repeat fixed;
+  color: #2b2c31;
+  font-size: 1rem;
+  line-height: 1.3em;
+}
+
+#main {
+  background-color: #e5e5e5;
+}
+
+#main .h1 {
+  background-color: #0d0e13;
+  color: #fff;
+  margin-bottom: 0.5em;
+  padding: 0.8em 0.6em 0.8em;
+}
+
+#main .h1 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.menu,
+#generated {
+  padding: 0 0.4em 0.8em;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li button {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  border-width: 3px;
+  font-size: 1.2rem;
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.menu ul li button.close {
+  margin-left: -0.5em;
+}
+
+#generated h2 {
+  font-size: 1.5rem;
+}
+
+#generated h3 {
+  font-size: 1.25rem;
+}
+
+#footer {
+  border: 2px solid black;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 3px;
+  padding: 1px;
+  background-color: black;
+  color: #fff;
+}
+#footer a {
+  color: red;
+}
+
+@media only screen and (device-width: 360px) {
+  .menu ul li button {
+    font-size: 2rem;
+    background-color: red;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu ul li button {
+    font-size: 3rem;
+    background-color: blue;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu ul li button {
+    font-size: 4rem;
+    background-color: green;
+  }
+}
