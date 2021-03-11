@@ -100,6 +100,7 @@ const rawData = {
             , "cassettiera"
             , "lavagna"
             , "sedia"
+            , "cavatappi"
         ]
     }
 }
